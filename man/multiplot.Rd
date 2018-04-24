@@ -1,9 +1,9 @@
 \name{multiplot}
 \alias{multiplot}
 \title{
-  multiplot
+  Multiplot
 }
-\description{Makes plots
+\description{Makes quadrant of ggplots
 
 }
 \usage{
@@ -11,24 +11,24 @@
 }
 
 \arguments{
-  \item{...}{
+  \item{...}{saved plot objects
 
   }
-  \item{plotlist}{
+  \item{plotlist}{NULL
 
   }
-  \item{file}{
+  \item{file}{path to save file
 
   }
-  \item{cols}{
+  \item{cols}{Number of columns, 1 or 2
 
   }
-  \item{layout}{
+  \item{layout}{NULL
 
   }
 
 }
-\value{
+\value{New plot
 
 }
 \references{
