@@ -34,5 +34,5 @@
 \examples{
   data(treat_compare)
   nam <- c("race_r","linked_fate","rr_scale","female","educ_r","democrat","republican","ind_other")
-  treat_compare(treat_compare,nam, "treatment")
+  aov_treat_compare(treat_compare,nam, "treatment")
   }
