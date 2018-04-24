@@ -1,7 +1,7 @@
 \name{t_out}
 \alias{t_out}
 \title{
-  t_out
+  t_out, t-test comparisons
 }
 \description{Single t-test comparison producing table
 
