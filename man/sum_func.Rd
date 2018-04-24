@@ -3,7 +3,7 @@
 \title{
   sum_func
 }
-\description{Summary of descriptive statistics
+\description{Summary of descriptive statistics; usually done for paper appendix
 
 }
 \usage{
@@ -11,12 +11,11 @@
 }
 
 \arguments{
-  \item{dat}{
-
+  \item{dat}{Dataset of class dataframe with variables to describe
   }
 
 }
-\value{
+\value{Table/data.frame of variables as rows, column names: Minimum, Maximum, Mean, Median, Standard Deviation
 
 }
 \references{
@@ -27,4 +26,6 @@
 }
 
 \examples{
+  data(w2)
+  sum_func(w2)
 }
