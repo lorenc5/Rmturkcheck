@@ -1,9 +1,9 @@
 \name{aov_treat_compare}
 \alias{aov_treat_compare}
 \title{
-  ANOVA test across treeatment conditions
+  ANOVA test across treatment conditions
 }
-\description{
+\description{Estimates ANOVA tests returning table
 
 }
 \usage{
@@ -21,10 +21,10 @@
 
   }
 }
-\value{
+\value{Table of results
 
 }
-\references{
+\references{aov() function
 
 }
 \author{
@@ -32,4 +32,7 @@
 }
 
 \examples{
+  data(treat_compare)
+  nam <- c("race_r","linked_fate","rr_scale","female","educ_r","democrat","republican","ind_other")
+  treat_compare(treat_compare,nam, "treatment")
   }
