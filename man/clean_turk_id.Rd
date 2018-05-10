@@ -1,5 +1,5 @@
-\name{clearn_turk_id}
-\alias{clearn_turk_id}
+\name{clean_turk_id}
+\alias{clean_turk_id}
 \title{
   Clean MTurk ID
 }
