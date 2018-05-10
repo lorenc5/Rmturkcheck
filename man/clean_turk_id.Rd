@@ -27,12 +27,13 @@
 }
 
 \examples{
+
 # GENERATE RANDOM IDS #
-letter_rand <- function(n = 100) {
-  a <- do.call(paste0, replicate(5, sample(LETTERS, n, TRUE), FALSE)) 
+letter_rand <- function(n=100) {
+  a <- do.call(paste0, replicate(4, sample(LETTERS, n, TRUE), FALSE))
   paste0(a, sprintf("%04d", sample(9999, n, TRUE)), sample(LETTERS, n, TRUE))
 }
-
+  
 # EXECUTE FUNCTION #
 mtid_toy_vec <- letter_rand()
 
