@@ -7,5 +7,5 @@ Maintainer: Loren Collingwood <loren.collingwood@ucr.edu>
 Description: Performs statistical tests and data management tools designed to expedite MTurk Wave 1, Wave 2 workflow.
 License: GPL (>= 2)
 Encoding: UTF-8
-Depends: Zelig, ZeligChoice, ggplot2, data.table, xtable
+Depends: Zelig, ZeligChoice, ggplot2, data.table, xtable, stringr
 LazyData: true
