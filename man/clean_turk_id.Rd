@@ -29,8 +29,8 @@
 
 # GENERATE RANDOM IDS #
 letter_rand <- function(n=100) {
-  a <- do.call(paste0, replicate(4, sample(LETTERS, n, TRUE), FALSE))
-  paste0(a, sprintf("%04d", sample(9999, n, TRUE)), sample(LETTERS, n, TRUE))
+  a <- do.call(paste0, replicate(4, sample(LETTERS, n, TRUE), FALSE));
+  paste0(a, sprintf("%04d", sample(9999, n, TRUE)), sample(LETTERS, n, TRUE));
 }
   
 # EXECUTE FUNCTION #
