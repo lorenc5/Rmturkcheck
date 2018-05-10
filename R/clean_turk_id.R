@@ -9,7 +9,7 @@ clean_turk_id <- function(mtid) {
   cat("Number of missing IDs:")
   print ( table(is.na(mtid)) )
   cat("Distribution of ID Length:\nSmall numbers (< 5) are missing or possibly errors\n")
-  element_count <- as.vector(sapply(gun$MTid,str_length))
+  element_count <- as.vector(sapply(mtid,str_length))
   print( table(element_count))
   return(mtid)
 }
