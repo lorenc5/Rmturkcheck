@@ -7,7 +7,7 @@
 
 }
 \usage{
-  clearn_turk_id(mtid)
+  clean_turk_id(mtid)
 }
 
 \arguments{
