@@ -20,7 +20,7 @@
 \value{Vector output of simulated values
 
 }
-\references{Zelig package
+\references{Zelig package; Collingwood, Lajevardi, Oskooii (2018)
 
 }
 \author{
