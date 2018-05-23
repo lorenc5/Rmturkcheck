@@ -1,5 +1,5 @@
-\name{Rmturkcheck-package.Rd}
-\alias{Rmturkcheck-package.Rd}
+\name{Rmturkcheck-package}
+\alias{Rmturkcheck-package}
 \alias{Rmturkcheck}
 \docType{package}
 \title{
