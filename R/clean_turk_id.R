@@ -2,6 +2,7 @@ clean_turk_id <- function(mtid) {
   mtid <- str_to_lower(mtid)
   mtid <- str_trim(mtid)
   mtid <- car::recode(mtid, "''=NA")
+  mtid_out <- table (mtid)
   cat("Unique number of elements:\n")
   print(length(unique(mtid)))
   cat("Number of elements:\n")
@@ -11,5 +12,7 @@ clean_turk_id <- function(mtid) {
   cat("Distribution of ID Length:\nSmall numbers (< 5) are missing or possibly errors\n")
   element_count <- as.vector(sapply(mtid,str_length))
   print( table(element_count))
+  print (mtid[mtid>1])
+
   return(mtid)
 }
