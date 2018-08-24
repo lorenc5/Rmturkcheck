@@ -46,7 +46,7 @@ df <- data.frame(lat, long, toy1, toy2, toy3, toy_turk_id, stringsAsFactors = F)
 no_soup_for_you <- guilty_bot(lat = "lat", long = "long", dat = df)
 
 # Keep only non-bot data
-keep <- !df$toy_turk_id %in% no_soup_for_you$toy_turk_id
+keep <- !df$toy_turk_id \%in\% no_soup_for_you$toy_turk_id
 df_bot_free <- df[keep,]; uniqueN(df_bot_free$toy_turk_id)
 head(df_bot_free)
 
