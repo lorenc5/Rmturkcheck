@@ -7,9 +7,9 @@ Many academics and survey practioners combine Mechanical Turk workers (sample) w
 
 However, this process has potential for contamination/error, including (but not limited to):
 
-1. The same respondent(s) taking the survey more than once
-2. Respondents giving fake answers or not actually reading the survey
-3. Bots automating responses providing essentially fake data.
+* 1. The same respondent(s) taking the survey more than once
+* 2. Respondents giving fake answers or not actually reading the survey
+* 3. Bots automating responses providing essentially fake data.
 
 To address point 1, Rmturkcheck includes a function, clean_turk_id(), that cleans the unique mturk id field, which reports the number of identical mturk ids.
 
