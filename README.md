@@ -19,6 +19,10 @@ Recent discoveries suggests that identical respondent latitude/longitude coordin
 
 ## Toy Example 
 ```{r}
+library(devtools)
+install_github("lorenc5/Rmturkcheck")
+library(Rmturkcheck)
+
 n <- 100
 lat <- c( rep("42.999967", n), rnorm(n*4, mean = 44))
 long <- c( rep("-80.444825", n), rnorm(n*4, mean = -83))
