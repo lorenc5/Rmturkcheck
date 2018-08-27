@@ -1,5 +1,5 @@
+# Rmturkcheck, Loren Collingwood
 
-# Rmturkcheck
 
 Rmturkcheck is an R package that facilitates the analysis of Mechanical Turk + Qualtrics single-wave and multi-wave panel studies. This document outlines the general process for implementing and checking data for a two-wave MTurk panel study fielded via the Qualtrics platform.
 
@@ -13,12 +13,12 @@ However, this process has potential for contamination/error, including (but not 
 
 To address point 1, Rmturkcheck includes a function, clean_turk_id(), which cleans the unique mturk id field and reports the number of identical mturk ids.
 
-Survey analysts and experimentalists typically embed attention checks into their surveys to address point 2. Also...example code:
+Survey analysts and experimentalists typically embed attention checks into their surveys to address point 2. 
 
-Recent discoveries suggests that identical respondent latitude/longitude coordinates may be an obvious indicator of a Turk bot. Rmturkcheck provides two functions: guilty_bot(), and drop_it_like_its_bot(), which 1) identify likely bot responses, and 2) subset the original data to user-defined bot criterion. For example, if you think 10 repsondents from the exact same latitutde and longitude coordinate seems suspicious, you are probably right!
+Recent discoveries suggests that identical respondent latitude/longitude coordinates may be an obvious indicator of a Turk bot. Rmturkcheck provides two functions: guilty_bot(), and drop_it_like_its_bot(), which 1) identify likely bot responses, and 2) subset the original data to user-defined bot criteria. For example, if you think 10 respondents from the exact same latitutde and longitude coordinate seems suspicious, you are probably right!
 
-## Prepare for analyses
-```{r basicconsole}
+## Toy Example 
+```{r, echo=F}
 n <- 100
 lat <- c( rep("42.999967", n), rnorm(n*4, mean = 44))
 long <- c( rep("-80.444825", n), rnorm(n*4, mean = -83))
