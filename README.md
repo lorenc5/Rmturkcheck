@@ -1,4 +1,4 @@
-# Rmturkcheck, Loren Collingwood
+# Rmturkcheck 
 
 
 Rmturkcheck is an R package that facilitates the analysis of Mechanical Turk + Qualtrics single-wave and multi-wave panel studies. This document outlines the general process for implementing and checking data for a two-wave MTurk panel study fielded via the Qualtrics platform.
@@ -38,7 +38,7 @@ df$turk_id_clean <- clean_turk_id(df$toy_turk_id)
 df2 <- df[na.omit(df$turk_id_clean),]; dim(df2)
 ```
 
-Next, we check fo super guilty bots to evaluate them in depth. These low-life bots... This function takes the lat/long variable names and the dataset, producing a string indicating which bots coordinates are most guilty, then also a dataframe of guilty bots you can then drop.
+Next, we check fo super guilty bots to evaluate them in depth. These low-life bots... guilty_bot() takes the lat/long variable names and the dataset, producing a string indicating which bot coordinates are most guilty, then also a dataframe of guilty bots you can then drop from your original dataset.
 
 ```{r}
 # Produce dataset of most guilty responses #
@@ -50,7 +50,7 @@ df_bot_free <- df[keep,]; uniqueN(df_bot_free$toy_turk_id)
 head(df_bot_free)
 ```
 
-Finally, we might want to drop respondents that fit certain bot-like criteria (i.e., having more than 3 exact same lat/long coordinates in your data when that lat/long is some point in the middle of a Minnesota lake. drop_it_like_its_bot() produces a new dataset, and also reports potential bot-rate in your data. You should now be able to run all analysis on this new dataset.
+Finally, we might want to drop respondents that fit certain bot-like criteria (i.e., having more than 3 exact same lat/long coordinates in your data when that lat/long is some point in the middle of a Minnesota lake). drop_it_like_its_bot() produces a new dataset, and also reports potential bot-rate in your data. You should now be able to run all analysis on this new dataset. guilty_bot() and drop_it_like_its_bot() can be thought of as inverses of one another.
 
 ```{r}
 # Drop responses that have more than 3 identical Lat/Longs in the data #
