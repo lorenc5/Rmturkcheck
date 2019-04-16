@@ -24,6 +24,9 @@ t_generalize <- function(w1, w2, cnames1, cnames2) {
   w1 <- w1[,col_select1]
   w2 <- w2[,col_select2]
 
+  w1 <- w1[, cnames1]
+  w2 <- w2[, cnames2]
+  
   # Create matrix holder
   ttest_collect <- matrix(NA, nrow=ncol(w1), ncol=5) # nrow=length of t_out() result
 
