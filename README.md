@@ -1,6 +1,6 @@
 # Rmturkcheck 
 
-Rmturkcheck is an R package that facilitates the analysis of Mechanical Turk + Qualtrics single-wave and multi-wave panel studies. The package has served as base code for some operations in Collingwood et al. (2018, Political Behavior) and Oskooii et al. (Forthcoming, Political Behavior). The project is in ongoing development by Loren Collingwood at UC, Riverside.
+Rmturkcheck is an R package that facilitates the analysis of Mechanical Turk + Qualtrics single-wave and multi-wave panel studies. The package has served as base code for some operations in Collingwood et al. (2019, Political Behavior) and Oskooii et al. (Forthcoming, Political Behavior). The project is in ongoing development by Loren Collingwood at UC, Riverside.
 
 This document outlines the general process for implementing and checking data for a two-wave MTurk panel study fielded via the Qualtrics platform.
 
